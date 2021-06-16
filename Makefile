@@ -1,4 +1,5 @@
 BUILD_OPTIONS=-DCMAKE_BUILD_TYPE=Debug
+BUILD_OPTIONS+=-DUSE_SYSTEM_LIBGIT2:bool=ON
 
 ifeq '$(findstring ;,$(PATH))' ';'
     UNAME := Windows
